@@ -20,7 +20,7 @@
   :local {:base-uri "/tmp/hadoop-s3-dist-versions/${run-path}"}
   :ami-version "2.4.9"
   :visible-to-all-users true
-  :jar-src-path "http://download.climate.com/s3distversions/releases/S3DistVersions-0.1.0.jar"
+  :jar-src-path "http://download.climate.com/S3DistVersions/releases/S3DistVersions-0.1.0.jar"
   ;; You need to set a keypair to SSH to the Hadoop master.
   ;; http://docs.aws.amazon.com/ElasticMapReduce/latest/DeveloperGuide/EMR_SetUp_KeyPair.html
   :keypair "mykeypair"
