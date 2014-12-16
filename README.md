@@ -24,7 +24,7 @@ that version.
 # Download
 
 You can access the latest jar at
-[http://download.climate.com/s3distversions/releases/S3DistVersions-0.1.0.jar](http://download.climate.com/s3distversions/releases/S3DistVersions-0.1.0.jar).
+[http://download.climate.com/S3DistVersions/releases/S3DistVersions-0.1.0.jar](http://download.climate.com/S3DistVersions/releases/S3DistVersions-0.1.0.jar).
 
 # Usage
 
@@ -55,8 +55,9 @@ command-line tool][7], for instance:
 ```shell
 aws emr create-cluster --ami-version=2.5.9 \
   --instance-type=m1.small --instance-count=5 \
-  --steps Type=CUSTOM_JAR,Name="S3DistVersions step",
-Jar=http://download.climate.com/s3distversions/releases/S3DistVersions-0.1.0.jar,Args=[\
+  --steps Type=CUSTOM_JAR,Name="S3DistVersions step",\
+Jar=http://download.climate.com/S3DistVersions/releases/S3DistVersions-0.1.0.jar,\
+Args=[\
 "--src s3://mybucket/mypath",\
 "--prefixes s3://mybucket/list-of-s3-prefixes.txt",\
 "--restore-time 2014-01-01T14:00:00+07:00",\
