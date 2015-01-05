@@ -85,12 +85,12 @@ across mappers, providing parallelism.
 
 Just to be clear about how to use prefixes, here's an example. Suppose you want
 to copy `s3://mybucket/mypath`, which contains `s3://mybucket/mypath/1` and
-`s3://mybucket/mypath/2`. Then you'd specify `--src s3://mybucket/mypath/` and
+`s3://mybucket/mypath/2`. Then you'd specify `--src s3://mybucket/mypath` and
 include the following prefixes:
 
 ```
-1
-2
+/1
+/2
 ```
 
 Note that it is still useful to follow the [usual recommendations for
